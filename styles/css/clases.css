@@ -1,0 +1,280 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (min-width: 0px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    background-image: url("../img/rayofondo.png");
+    background-size: 5rem;
+    background-position-y: 9rem;
+    background-blend-mode: luminosity;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body::-webkit-scrollbar {
+    -webkit-appearance: none;
+            appearance: none;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #f7e649e1;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #f7e549;
+  }
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #0a0a0a;
+    padding-top: 1rem;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    right: 0px;
+    z-index: 1;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body header .logo a img {
+    width: 10rem;
+    margin-left: 5rem;
+  }
+  body header h4 {
+    color: grey;
+    margin-left: 2rem;
+  }
+  body header input {
+    margin-left: 5rem;
+    height: 2rem;
+    width: 13rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+  }
+  body header input:focus {
+    border-bottom: solid 1px #f7e549;
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+  body header img {
+    width: 1.5rem;
+  }
+  body .costado {
+    width: 3rem;
+    height: 100%;
+    background-color: #0a0a0a;
+    position: fixed;
+    top: 0rem;
+    z-index: 2;
+  }
+  body .costado img {
+    width: 2rem;
+    position: relative;
+    top: 5rem;
+    margin: 0.5rem;
+  }
+  body .costado .bar img {
+    width: 2rem;
+    position: relative;
+    top: 0.8rem;
+  }
+  body .contenedorCarga {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .contenedorCarga .carga {
+    top: 10rem;
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    z-index: 1000;
+    -webkit-box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+  }
+  body .contenedorCarga .carga::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#F200D1), to(#78359F));
+    background-image: linear-gradient(0deg, #F200D1 0%, #78359F 100%);
+    -webkit-animation: spin .5s infinite linear;
+            animation: spin .5s infinite linear;
+  }
+  body .contenedorCarga .carga::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 85%;
+    height: 85%;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  body #contenedor {
+    position: relative;
+    top: 9rem;
+    margin-left: 3rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body #contenedor .seccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  body #contenedor .seccion .cajaTitulo {
+    background-color: #f7e549;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    width: 85%;
+    border-radius: 5px 5px 0 0;
+    min-height: 3.5rem;
+    margin-bottom: 0rem;
+    border-bottom: #78359F 1px solid;
+  }
+  body #contenedor .seccion .cajaTexto {
+    padding: 0;
+  }
+  body #contenedor .seccion .cajaTexto p {
+    background-color: #f7e549;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    width: 85%;
+    padding: 0.5rem;
+  }
+  body #contenedor .seccion .cajaTriangulo {
+    background-color: #f7e549;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    width: 85%;
+    border: 0px;
+    margin-top: 0rem;
+    border-radius: 0 0 5px 5px;
+    background-color: #f7e549;
+  }
+  body #contenedor .seccion .cajaTriangulo .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 1rem solid #000000;
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-left: 45%;
+    pointer-events: none;
+  }
+  body .cuadrado {
+    min-width: 40%;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f7e549;
+    margin: 9rem 1rem 0rem 4rem;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  body .cuadrado input {
+    margin-left: 5rem;
+    height: 2rem;
+    width: 13rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #f7e549;
+    border-bottom: solid 1px #0a0a0a;
+    margin-left: 0rem;
+    width: 10rem;
+  }
+  body .cuadrado button {
+    font-size: 1rem;
+  }
+  body .vacio {
+    display: none;
+  }
+  body .footer {
+    background-color: #f7e549;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body .costado img {
+    top: 2rem;
+  }
+  body .cuadrado {
+    margin-top: 6rem;
+  }
+  body #contenedor {
+    top: 5rem;
+  }
+  body #contenedor .seccion {
+    max-width: 22.5rem;
+  }
+}
