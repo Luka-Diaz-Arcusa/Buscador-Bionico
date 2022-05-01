@@ -1,0 +1,26 @@
+@media screen and (min-width: 0px) {
+    body {
+        .contenedorInfo{
+            @include cajas;
+            width: fit-content;
+            margin-top: 5rem;
+            h2 {
+                margin: 0 0 1rem;
+            }
+            h3 {
+                margin-top: 1rem;
+            }
+         }
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    body {
+       .contenedorInfo{
+        margin-top: 6rem;
+      }
+   
+    }
+   }
+   

@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+@media screen and (min-width: 0px) {
+ 
+    body {
+      margin:0;
+      padding:0;
+      background-color: $body-fondo;
+      background-image: url("../img/rayofondo.png");
+      background-size: 5rem; 
+      background-position-y: 9rem; 
+      background-blend-mode:luminosity;
+      font-family:Arial, Helvetica, sans-serif;
+      &::-webkit-scrollbar{
+        appearance: none;
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: $amarillo-transparente;
+        &:hover {
+          background-color: $amarillo;
+        }
+      }
+     
+     .granDiv {
+        .contenedorNombre{
+            @include cajas;
+            margin: 0;
+            display: block;
+        }
+     }
+  
+    .vacio {
+        display: none;
+      }
+    .footer {
+        background-color: $amarillo;
+        width: 100%;
+        position: relative;
+        bottom: 0px;
+      }
+     
+    }
+    
+  }
+  
+

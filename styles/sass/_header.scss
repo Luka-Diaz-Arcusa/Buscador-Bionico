@@ -1,0 +1,79 @@
+@media screen and (min-width: 0px) {
+    body {
+        header {
+            display: flex;
+            align-items:center;
+            justify-content:flex-start;
+            flex-wrap: wrap;
+            background-color: $header-fondo;
+            padding-top: 1rem;
+            position:fixed;
+            top: 0px;
+            width: 100%;
+            right: 0px;
+            z-index: 1;
+            height: fit-content;
+          .logo {
+            a {
+                img {
+                  width: 10rem;
+                  margin-left: 5rem;
+                }  
+              }
+          }
+  
+          h4 {
+            color: grey;
+            margin-left: 2rem;
+          }
+        
+            input {
+            @include input;
+            background-color: $header-fondo;
+            color:  rgb(240, 240, 240);
+          
+            &:focus{
+              border-bottom: solid 1px  $amarillo;
+              transition: 0s;
+            }
+        }
+        img {
+          width: 1.5rem;
+        }
+      }
+
+      .costado {
+        width: 3rem;
+        height: 100%;
+        background-color: $header-fondo;
+        position:fixed;
+        top: 0rem;
+        z-index: 2;
+        img {
+          width: 2rem;
+          position: relative;
+          top: 5rem;
+          margin: 0.5rem;
+        }
+        .bar {
+          img {
+            width: 2rem;
+            position: relative;
+            top: 0.8rem;
+          }
+        }
+
+      }
+  
+    }
+}
+
+@media screen and (min-width: 768px){
+  body {
+    .costado {
+      img {
+        top: 2rem;
+      }
+    }
+  }
+}

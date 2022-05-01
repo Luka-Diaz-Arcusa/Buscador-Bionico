@@ -1,0 +1,78 @@
+@media screen and (min-width: 0px) {
+    
+
+    body {
+        #contenedorLirycs {
+            position: relative;
+            top: 8rem;
+            margin-left: 3rem;
+            height: min-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .seccion{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .cajaTitulo {
+                @include caja;
+                border-radius: 5px 5px 0 0;
+                min-height: 3.5rem;
+                margin-bottom: 0rem;
+                border-bottom: $violeta-logo 1px solid;
+                }
+          
+                .cajaTexto {
+                padding: 0;
+                
+                p, h3 {
+                    @include caja;
+                    padding: 0.5rem;
+                }
+                }
+
+                .cajaTriangulo {
+                @include caja;
+                border: 0px;
+                margin-top: 0rem;
+                border-radius: 0px 0px 5px 5px;
+                background-color: $amarillo;
+                transition: all 0s;
+                
+                
+                .triangulo {
+                    @include triangulo;
+                    margin-left: 47%;
+                    pointer-events: none;
+                }
+                }
+            
+            
+            }
+            .cajaError{
+            @include caja;
+            img {
+                width: 1.5rem;
+            }
+            }
+        }
+        .rotate  {
+            transform: rotate(180deg) !important;
+            border-radius: 5px 5px 0px 0px !important;
+        }
+        .otroRotate  {
+            transform: rotate(-90deg) !important;
+        }
+
+    }
+}
+@media screen and (min-width: 768px) {
+    body {
+        #contenedorLirycs {
+            top: 5rem;
+            .seccion {
+            max-width: 22.5rem;
+            }
+        }
+    }
+}

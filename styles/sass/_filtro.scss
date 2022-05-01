@@ -1,0 +1,78 @@
+@media screen and (min-width: 0px) {
+    body {
+        .granDiv {
+            height: 20rem;
+            position: absolute;
+            top: 9rem;
+            left: 4rem;
+          
+            .contenedorFiltro {
+                @include cajas;
+                padding-bottom: .1rem;
+                display: inline-block;
+                margin: 1rem 0 0 0;
+                width: fit-content;
+                .contenedorTituloFiltro{
+                    margin-bottom: 1rem;
+                    cursor: pointer;
+                    
+
+                    .tituloFiltro {
+                        display: inline-block;
+                        cursor: pointer;
+                       
+                    }
+                    .trianguloFiltro {
+                        @include triangulo;
+                        display: inline-block;
+                        border-left: 0.8rem solid #000000;
+                        border-top: 0.4rem solid transparent;
+                        border-bottom: 0.4rem solid transparent; 
+                    }
+            }
+
+
+                .filtros {
+                    border-top: 2px solid $header-fondo;
+                    .filtroAlbum, .filtroCreador, .filtroTodo{
+                        margin-bottom: .5rem;
+                    
+                        p {
+                            padding: .4rem;
+                            transition: 300ms;
+                            border-radius: 5px;
+                            &:hover {
+                                cursor:pointer;
+                                background-color: $amarillo-oscuro
+                            }
+                        }
+
+                    }
+                    .filtroTodo {
+                        padding: .4rem;
+                        margin-top: .5rem;
+                        padding-left: 0rem;
+                        transition: 300ms;
+                        border-radius: 5px;
+                        &:hover {
+                               cursor:pointer;
+                                background-color: $amarillo-oscuro;
+                        }
+                    }
+                
+                
+                }
+
+            }
+        
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        .granDiv {
+            top: 6rem;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/unite.css">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="icon" href="styles/img/icon.png">
+    <title>Buscador Biónico </title>
+</head>
+
+<body>
+    <header> 
+        <div class="logo">
+            <a href="index.html">
+               <img src="styles/img/LogoPosta.png" alt="">
+            </a>
+        </div>
+        <input class="daLetra" type="textarea" placeholder="Poné la palabra"><img id="lupa" src="styles/img/lupa.svg" alt="">
+    </header>
+
+    <div class="costado">
+        <div class="bar"> <img src="styles/img/menu.svg" alt=""> </div>
+        <a href="index.html"><img src="styles/img/inicio.svg" alt=""></a>
+        <a href="info.html"> <img src="styles/img/info.svg" alt=""> </a>
+        <a href="config.html"> <img src="styles/img/ajustes.svg" alt=""></a>
+       
+    </div>
+
+
+
+    <div class="contenedorCarga vacio">
+        <div class="carga">
+
+        </div>
+    </div>
+
+    <div class="granDiv">
+
+        <div class="contenedorNombre">
+
+        </div>
+
+        <div class="contenedorFiltro">
+                <div class="contenedorTituloFiltro">
+                    <h4 class="tituloFiltro">Filtrar por:</h4>
+                    <div class="trianguloFiltro"></div>
+                </div>
+
+                <div class="filtros vacio">
+                        <div>
+                            <h4 class="filtroTodo">Todo</h4>
+                        </div>
+                    <div class="filtroAlbum">
+                            <h4>Album</h4>
+                            <p class="filtroObsesionario">Obsesionario</p>
+                            <p class="filtroDestinologia">Destinología</p>
+                            <p class="filtroCancionesDelHuracan">Canciones del huracán</p>
+                            <p class="filtroHolaMundo">Hola mundo</p>
+                            <p class="filtroTapaDeModa">Tapa de moda</p>
+                    </div>
+                    <div class="filtroCreador">
+                            <h4>Creador</h4>
+                            <p class="filtroTanBionica">Tan Bionica</p>
+                            <p class="filtroChano">Chano</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div id="contenedorLirycs">
+
+    </div>
+  
+       
+   
+
+</body>
+<script src="js/canciones.js"></script>
+<script src="js/index.js"></script>
+</html>

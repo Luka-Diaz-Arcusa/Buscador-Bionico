@@ -1,0 +1,49 @@
+@media screen and (min-width: 0px) { 
+    body {
+
+    
+        .contenedorConfig{
+            @include cajas;
+            width: fit-content;
+            margin-top: 5rem;
+            h2, h3 {
+                margin: 1rem 0;
+            }
+            input {
+            @include input;
+            background-color: $amarillo;
+            border-bottom: solid 1px $header-fondo;
+            margin-left: 0rem;
+            width: 10rem;
+            margin-bottom: 1rem;
+            display: block;
+            }
+            button {
+            font-size: 1rem;
+            margin: .3rem;
+            margin-left: 0;
+            background-color: $amarillo;
+            border-radius: 5px;
+            }
+            .bttn-unite.bttn-royal {
+                color: $violeta-logo;
+                &:hover, &:focus{
+                    background: #bd2df5;
+                    color: #fff;
+                }
+            }
+        
+        
+            
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    body {
+      .contenedorConfig{
+        margin-top: 6rem;
+      }
+   
+    }
+   }
